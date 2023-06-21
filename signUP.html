@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="css//main.css">
+    <link rel="stylesheet" href="css/signUp.css">
+</head>
+
+<body class="body">
+
+    <!-- ============   Header  =============  -->
+    <header class="container-fluid header">
+        <div class="header__top">
+            <div class="logo">
+                <img src="image/logo.png" alt="" />
+            </div>
+            <div class="btn__header">
+                <a class="bttn btn__sign" href="#"> <i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل الدخول </a>
+                <!-- <a class="bttn btn__login" href="#"> إنشاء حساب </a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- ============   signup  =============  -->
+    <section class="container-fluid signup">
+        <!-- title form -->
+        <div class="signup__title">
+            <p>مرحبا بك ...</p>
+            <p class="titleGreen">سجل الان واستمتع بخدمات رائعة</p>
+        </div>
+
+        <!-- form -->
+        <form action="">
+            <label for="name" class="form-label">الاسم</label>
+            <div class="input-group">
+                <div class="input-icon"><i class="fa fa-user"></i></div>
+                <input id="name" type="text" placeholder="أدخل الاسم الأول والأخير" />
+            </div>
+            <label for="email" class="form-label">البريد الالكتروني</label>
+            <div class="input-group">
+                <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                <input id="email" type="email" placeholder="أدخل البريد الخاص بك" />
+            </div>
+            <label for="password" class="form-label">الرقم السري</label>
+            <div class="input-group">
+                <div class="input-icon"><i class="fa fa-key"></i></div>
+                <input id="password" type="password" placeholder="أدخل كلمة السر الخاصة بك" />
+            </div>
+            <label for="Confirm_password" class="form-label">تأكيد الرقم السري</label>
+            <div class="input-group">
+                <div class="input-icon"><i class="fa fa-key"></i></div>
+                <input id="Confirm_password" type="password" placeholder="أعادة إدخال كلمة السر" />
+            </div>
+            <div class="file">
+                <input class="file-input" type="file" name="file" hidden>
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>ارفع سيرتك الذاتية</p>
+                <span>أو اسحب هنا</span>
+            </div>
+            <!-- buttons form -->
+            <div class="button">
+                <button type="submit" class="bttn sign-in_btn">
+                    <span>إنشاء حساب</span>
+                </button>
+                <div class="separator">
+                    <hr class="line">
+                    <span>أو</span>
+                    <hr class="line">
+                </div>
+                <button type="submit" class="bttn sign-in_ggl">
+                    <i class="fa-brands fa-google"></i>
+                    <span>باستخدام جوجل</span>
+                </button>
+            </div>
+        </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ----- link bootstrap  -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- ----- link js -->
+    <script src="js/uploadFiles.js"></script>
+</body>
+</html>

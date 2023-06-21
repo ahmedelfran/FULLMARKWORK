@@ -1,0 +1,329 @@
+.one-chat {
+    width: 90%;
+    margin-top: 70px;
+    padding: 0;
+}
+
+.one-chat .head-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0 20px 20px 0;
+    cursor: pointer;
+}
+.one-chat .head-title i{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.chat {
+    width: 100%;
+    padding: 10px 40px 40px 40px;
+    background: #F5F5F5;
+    border-radius: 45px;
+}
+.chat-item {
+    padding-top: 40px;
+    border-bottom: 3px solid #ffffff;
+}
+.chat-item a {
+    color: rgba(0, 0, 0, 0.7);
+}
+.chat-item-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #ffffff;
+}
+.chat-item img {
+    width: 80px;
+    height: 80px;
+}
+.chat-item .massage {
+    width: 85%;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 15px auto 25px;
+}
+.chat-name {
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.time i {
+    color: #999797;
+    font-size: 16px;
+}
+
+.time {
+    color: #999797;
+    font-weight: 600;
+}
+
+.chat-name h5 {
+    font-weight: 700;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* == send message == */
+.input-message {
+    position: relative;
+    width: 100%;
+    border-radius: 40px;
+    margin: 70px 0 20px 0;
+}
+
+.input-message input {
+    width: 100%;
+    padding: 20px 35px 20px 100px;
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 40px;
+}
+
+.input-message input:focus {
+    outline: 0;
+}
+
+.input-message button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 30px;
+    color: #008B43;
+    background: transparent;
+    border: none;
+    border-right: 1px solid #008B43;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* =================== all chat =================== */
+.all-chat {
+    cursor: pointer;
+}
+.massage_allChat {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.chat-date {
+    font-weight: 600;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (max-width: 1024px) {
+    .chat-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .chat-name h5 {
+        font-size: 21px;
+    }
+
+    .time i {
+        font-size: 15px;
+    }
+
+    .time span {
+        font-size: 18px;
+    }
+
+    .chat-item .massage {
+        width: 80%;
+        font-size: 16px;
+        margin: 15px auto 25px;
+    }
+    /* =================== all chat =================== */
+    .one-chat .head-title {
+        font-size: 20px;
+        padding: 0 20px 10px 0;
+    }
+.chat-item-all {
+    flex-direction: column;
+    align-items: start;
+}
+.chat-date {
+    padding-right: 20px;
+    font-size: 14px;
+}
+.massage_allChat {
+    font-size: 16px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    .chat {
+        padding: 10px 20px 30px 20px;
+        border-radius: 40px;
+    }
+    .chat-name {
+        line-height: 20px;
+        margin-top: 0;
+    }
+    .chat-item .massage {
+        width: 100%;
+    }
+
+    .chat-item img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .chat-name h5 {
+        font-size: 19px;
+        line-height: 16px;
+    }
+
+    .time i {
+        font-size: 14px;
+    }
+
+    .time span {
+        line-height: 18px;
+        font-size: 16px;
+    }
+
+    .input-message input {
+        padding: 15px 35px 15px 100px;
+    }
+    .input-message button {
+        padding: 10px 18px;
+        font-size: 20px;
+    }
+    .input-message {
+        margin: 40px 0 20px 0;
+    }
+    /* =================== all chat =================== */
+.massage_allChat {
+    font-size: 17px;
+}
+}
+
+@media only screen and (max-width: 576px) {
+    .chat {
+        padding: 0px 10px 10px 10px;
+        border-radius: 35px;
+    }
+
+    .chat-name {
+        padding: 0 15px;
+    margin-top: 5px;
+        line-height: 16px;
+    }
+    .chat-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chat-item .massage {
+        width: 95%;
+        font-size: 15px;
+        margin: 15px auto 25px;
+    }
+
+    .chat-name h5 {
+        font-size: 17px;
+        line-height: 14px;
+    }
+
+    .time i {
+        font-size: 14px;
+    }
+
+    .time span {
+        font-size: 14px;
+    }
+
+    .input-message input {
+        padding: 10px 35px 10px 100px;
+    }
+
+    .input-message button {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+    /* =================== all chat =================== */
+    .chat-date {
+        font-size: 13px;
+    }
+    .massage_allChat {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+}
+@media only screen and (max-width: 426px) {
+    .chat {
+        padding: 0px 10px 5px 10px;
+    }
+    .chat-item img {
+        width: 45px;
+        height: 45px;
+    }
+    .chat-name {
+        line-height: 14px;
+    }
+    .time i {
+        font-size: 13px;
+    }
+    .time span {
+        font-size: 14px;
+    }
+    .chat-name h5 {
+        font-size: 16px;
+    }
+    .chat-item .massage {
+        width: 100%;
+        font-size: 13px;
+        margin: 15px auto;
+    }
+    .input-message button {
+        padding: 5px 11px;
+        font-size: 18px;
+    }
+    .input-message input {
+        padding: 10px 25px 10px 80px;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .one-chat {
+        margin-top: 20px;
+    }
+    .chat-item img {
+        width: 40px;
+        height: 40px;
+    }
+    .chat-name {
+        line-height: 8px;
+    }
+    .chat-name h5 {
+        font-size: 14px;
+    }
+    .time i {
+        font-size: 13px;
+    }
+
+    .time span {
+        font-size: 13px;
+    }
+    /* =================== all chat =================== */
+.massage_allChat {
+    font-size: 14px;
+}
+.chat-date {
+    padding-right: 0;
+    font-size: 13px;
+}
+}

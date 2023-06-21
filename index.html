@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرائيسية</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="css//main.css">
+    <link rel="stylesheet" href="css/signUp.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+    <!-- ============   Header  =============  -->
+    <header class="container-fluid header" id="header">
+        <section class="wrapper">
+            <span class="overlay"></span>
+            <div class="header__top d-flex align-items-center justify-content-between">
+                <div class="header__top-right d-flex align-items-center gap-4">
+                    <div class="logo">
+                        <img src="image/logo.png" alt="" />
+                    </div>
+                    <div class="search">
+                        <input type="search" placeholder="ابحث عن خدمة">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="header__top-lift">
+                    <div class="burger" id="burger">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </div>
+                    <!-- <div class="user" onclick="toggleList()">
+                        <div class="user__img">
+                            <img src="image/Ellipse.png" />
+                        </div>
+                    </div> -->
+                    <div class="btn__header btn_none">
+                        <a class="bttn btn__sign" href="login.html"> <i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل الدخول </a>
+                        <a class="bttn btn__login" href="signUP.html"> إنشاء حساب </a>
+                    </div>
+                    <div class="user__list">
+                        <a href="AddService.html" class="user_item"><span>إضافة خدمة</span><i
+                                class="fa-solid fa-chevron-left fa-xs"></i></a>
+                        <a href="AddSection.html" class="user_item"><span>طلب خدمة</span><i
+                                class="fa-solid fa-chevron-left fa-xs"></i></a>
+                        <a href="Profile.html" class="user_item"><span>البروفايل</span><i
+                                class="fa-solid fa-chevron-left fa-xs"></i></a>
+                        <a href="AllChat.html" class="user_item"><span>أشخاص تواصلت معهم</span><i
+                                class="fa-solid fa-chevron-left fa-xs"></i></a>
+                        <div class="user_signup">
+                            <button><i class="fa-solid fa-arrow-right-to-bracket fa-lg"></i><span>تسجيل
+                                    الخروج</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar" id="navbar">
+                <div class="top_barmedia">
+                    <div class="data_user gap-2">
+                        <!-- button -->
+                        <a class="btn_sign" href="login.html"> <i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل
+                            الدخول </a>
+                        <a class="btn_login" href="signUP.html"> إنشاء حساب </a>
+                        <!-- <div class="user">
+                            <div class="user__img">
+                                <img src="image/Ellipse.png" alt="" />
+                            </div>
+                        </div>
+                        <h6>Ahmed Elfran</h6> -->
+                    </div>
+                    <div class="search_barmedia">
+                        <input type="text" placeholder="ابحث عن خدمة...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <ul class="menu" id="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">الرئيسية</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">المدونة</a></li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">التعليم عن بعد<i
+                                class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">الكتابة<i
+                                class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">المال والأعمال<i
+                                class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">الفن<i
+                                class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">البرمجة والتصميم<i
+                                class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">التصميمات والديكورات<i
+                                class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">خدمات التسويق<i
+                                class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">المزيد<i
+                                class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">التعليم عن بعد 1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- scroll to top && Chat -->
+            <div class="to_top" >
+                    <div class="arrow_toTop hide" id="js-top">
+                        <i class="fa-solid fa-arrow-up-long"></i>
+                    </div>
+                <a href="AllChat.html">
+                    <div class="chat_toTop hide" id="js-topp">
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </header>
+
+
+
+    <!-- ===============  Home ============  -->
+    <section class="container-fluid home">
+        <div class="row">
+            <div class="right__box col-lg-6">
+                <div class="content">
+                    <div class="content__title">
+                        <h3 class="title__en">FULL MARK WORK</h3>
+                        <h3 class="title__ar">السوق العربي لبيع وشراء الخدمات المصغرة</h3>
+                    </div>
+
+                    <div class="content__text">
+                        <p>ربما تكون قد سئمت من عملك المكتبي أو تسعي لكسب دخل إضافي أو ربما أصبحت هوايتك الجانبية
+                            عملاً إضافياً تقوم به بعد انتهاء ساعات الدوام.</p>
+                        <p>أيا كان سبب الذي تملكه, فلا شك ان العمل الحر يزداد انتشاراً وشيوعاً يوماً بعد يوم . تصفح
+                            علي موقعنا واستمتع بخدمات رائعة</p>
+                    </div>
+
+                    <div class="content__search">
+                        <label class="search__title">ابحث عن خدمة الان</label><br>
+                        <input type="search" placeholder="اكتب الخدمة">
+                        <button class="bttn search__btn">ابحث</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left__box col-lg-6">
+                <div class="box__img">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                </div>
+                <img src="image/image 1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ sections ============  -->
+    <section class="container-fluid sections">
+        <h3 class="head__title">أقسام الموقع</h3>
+        <div class="row">
+            <div class="sections__item col-md-3 col-sm-6 col-6 ">
+                <div>
+                    <img src="image/webinar 1.png" alt="webinar">
+                </div>
+                <a href="SubCategory.html"><span>التعليم عن بعد</span></a>
+            </div>
+            <div class="sections__item col-md-3 col-sm-6 col-6 ">
+                <div>
+                    <img src="image/translate 1.png" alt="translate">
+                </div>
+                <a href="SubCategory.html"><span>الكتابة والترجمة</span></a>
+            </div>
+            <div class="sections__item col-md-3 col-sm-6 col-6 ">
+                <div>
+                    <img src="image/give-money 1.png" alt="give-money">
+                </div>
+                <a href="SubCategory.html"><span>المال والأعمال</span></a>
+            </div>
+            <div class="sections__item col-md-3 col-sm-6 col-6 ">
+                <div>
+                    <img src="image/multimedia 1.png" alt="multimedia">
+                </div>
+                <a href="SubCategory.html"><span>الفن</span></a>
+            </div>
+            <div class="sections__item col-md-3 col-sm-6 col-6 ">
+                <div>
+                    <img src="image/coding 1.png" alt="coding">
+                </div>
+                <a href="SubCategory.html"><span>برمجة وتطوير</span></a>
+            </div>
+            <div class="sections__item col-md-3 col-sm-6 col-6 ">
+                <div>
+                    <img src="image/bookkeeping 1.png" alt="bookkeeping">
+                </div>
+                <a href="SubCategory.html"><span>برامج ادارة الحسابات</span></a>
+            </div>
+            <div class="sections__item col-md-3 col-sm-6 col-6 ">
+                <div>
+                    <img src="image/art 1.png" alt="art">
+                </div>
+                <a href="SubCategory.html"><span>التصميم والديكورات</span></a>
+            </div>
+            <div class="sections__item col-md-3 col-sm-6 col-6 ">
+                <div>
+                    <img src="image/social-media 1.png" alt="social-media">
+                </div>
+                <a href="SubCategory.html"><span>خدمات التسويق</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ Services ============  -->
+    <section class="container-fluid services">
+
+        <div class="service__head">
+            <h3 class="head__title">الخدمات المقدمة</h3>
+            <a href="services.html" class="bttn services__btn">عرض المزيد</a>
+        </div>
+        <!-- ___ start row ___ -->
+        <div class="row">
+
+            <!-- ____ services 1 ____ -->
+            <div class="services__card col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card__top">
+                        <img src="image/Ellipse 2.png" class="card__img__user" alt="user">
+                        <p>Mohamed Ahmed</p>
+                    </div>
+                    <!-- img card -->
+                    <img src="image/photo1.png" class="card__img" alt="">
+
+                    <div class="card__body">
+                        <a href="services.html">
+                            <h5 class="card-title">كتابة بحث علمي بنسبة اقتباس 5</h5>
+                        </a>
+                        <p class="card-text">الكتابة > الأبحاث العلمية</p>
+                    </div>
+
+                    <div class="card__bottom">
+                        <div class="card__price">
+                            <p>سعر الخدمة <span> $5 </span></p>
+                        </div>
+                        <div class="card__rating">
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(24)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ____ services 2 ____ -->
+            <div class="services__card col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card__top">
+                        <img src="image/Ellipse 2.png" class="card__img__user" alt="user">
+                        <p>Mohamed Ahmed</p>
+                    </div>
+                    <!-- img card -->
+                    <img src="image/photo 2.png" class="card__img" alt="">
+
+                    <div class="card__body">
+                        <a href="services.html">
+                            <h5 class="card-title">إنشاء تطبيق باستخدام Flutter </h5>
+                        </a>
+                        <p class="card-text">التصميمات والديكورات > تصميم تطبيقات الموبايل </p>
+                    </div>
+                    <div class="card__bottom">
+                        <div class="card__price">
+                            <p>سعر الخدمة <span> $5 </span></p>
+                        </div>
+                        <div class="card__rating">
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                            <span>(24)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ____ services 3 ____ -->
+            <div class="services__card col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card__top">
+                        <img src="image/Ellipse 2.png" class="card__img__user" alt="user">
+                        <p>Mohamed Ahmed</p>
+                    </div>
+                    <!-- img card -->
+                    <img src="image/photo3.png" class="card__img" alt="">
+
+                    <div class="card__body">
+                        <a href="services.html">
+                            <h5 class="card-title">تصميمات معماريه وإنشائية</h5>
+                        </a>
+                        <p class="card-text">التصميمات والديكورات > تصميمات المباني والاعمار </p>
+                    </div>
+                    <div class="card__bottom">
+                        <div class="card__price">
+                            <p>سعر الخدمة <span> $5 </span></p>
+                        </div>
+                        <div class="card__rating">
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                            <span>(24)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ____ services 4 ____ -->
+            <div class="services__card col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card__top">
+                        <img src="image/Ellipse 2.png" class="card__img__user" alt="user">
+                        <p>Mohamed Ahmed</p>
+                    </div>
+                    <!-- img card -->
+                    <img src="image/photo1.png" class="card__img" alt="">
+
+                    <div class="card__body">
+                        <a href="services.html">
+                            <h5 class="card-title">كتابة بحث علمي بنسبة اقتباس 5</h5>
+                        </a>
+                        <p class="card-text">الكتابة > الأبحاث العلمية</p>
+                    </div>
+                    <div class="card__bottom">
+                        <div class="card__price">
+                            <p>سعر الخدمة <span> $5 </span></p>
+                        </div>
+                        <div class="card__rating">
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                            <span>(24)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ____ services 5 ____ -->
+            <div class="services__card col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card__top">
+                        <img src="image/Ellipse 2.png" class="card__img__user" alt="user">
+                        <p>Mohamed Ahmed</p>
+                    </div>
+                    <!-- img card -->
+                    <img src="image/photo 2.png" class="card__img" alt="">
+
+                    <div class="card__body">
+                        <a href="services.html">
+                            <h5 class="card-title">إنشاء تطبيق باستخدام Flutter </h5>
+                        </a>
+                        <p class="card-text">التصميمات والديكورات > تصميم تطبيقات الموبايل </p>
+                    </div>
+                    <div class="card__bottom">
+                        <div class="card__price">
+                            <p>سعر الخدمة <span> $5 </span></p>
+                        </div>
+                        <div class="card__rating">
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(24)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ____ services 6 ____ -->
+            <div class="services__card col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card__top">
+                        <img src="image/Ellipse 2.png" class="card__img__user" alt="user">
+                        <p>Mohamed Ahmed</p>
+                    </div>
+                    <!-- img card -->
+                    <img src="image/photo3.png" class="card__img" alt="">
+
+                    <div class="card__body">
+                        <a href="services.html">
+                            <h5 class="card-title">تصميمات معماريه وإنشائية</h5>
+                        </a>
+                        <p class="card-text">التصميمات والديكورات > تصميمات المباني والاعمار </p>
+                    </div>
+                    <div class="card__bottom">
+                        <div class="card__price">
+                            <p>سعر الخدمة <span> $5 </span></p>
+                        </div>
+                        <div class="card__rating">
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                            <span>(24)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ___ end row ___ -->
+    </section>
+
+    <!-- ============ Extra service ============  -->
+    <section class="container-fluid extra_service">
+        <h3 class="head__title">خدمات إضافية</h3>
+
+        <!-- ___ service 1 ___ -->
+        <div class="extra_service-item col">
+            <div class="extra_service-img">
+                <img src="image/customer-care 1.png" alt="customer care">
+            </div>
+            <div class="extra_service-content">
+                <h3 class="extra_service-title">كتابة بحث علمي بنسبة اقتباس 5</h3>
+                <p class="extra_service-price">سعر الخدمة <span> 5$ </span></p>
+            </div>
+        </div>
+        <!-- ___ service 2 ___ -->
+        <div class="extra_service-item col">
+            <div class="extra_service-img">
+                <img src="image/customer-care 1.png" alt="customer care">
+            </div>
+            <div class="extra_service-content">
+                <h3 class="extra_service-title">برمجة موقع ويب باستخدام WORD PRESS</h3>
+                <p class="extra_service-price">سعر الخدمة <span> 5$ </span></p>
+            </div>
+        </div>
+        <!-- ___ service 3 ___ -->
+        <div class="extra_service-item col">
+            <div class="extra_service-img">
+                <img src="image/customer-care 1.png" alt="customer care">
+            </div>
+            <div class="extra_service-content">
+                <h3 class="extra_service-title">تصميم تطبيق هاتف وويب سايت </h3>
+                <p class="extra_service-price">سعر الخدمة <span> 5$ </span></p>
+            </div>
+        </div>
+
+        <!-- ___  buttons  ___ -->
+        <div class="extra_service-buttons col">
+            <a class="bttn btn__show" href="AdditionalServices.html">عرض جميع الخدمات</a>
+            <a class="bttn btn__add" href="AddSection.html"> <i class="fa-sharp fa-solid fa-plus"> </i> أضافة خدمة </a>
+        </div>
+    </section>
+
+    <!-- ============ new ============  -->
+    <section class="container-fluid new">
+        <div class="new__head">
+            <h3 class="head__title">جديد الموقع </h3>
+            <a href="SubCategory.html" class="bttn new__btn">عرض جميع الأخبار </a>
+        </div>
+        <div class="new__img">
+            <div class="new__img-content">
+                <p class="title__content">ماذا تنتظر ؟</p>
+                <a href="SubCategory.html" class="bttn new__btn-content">اشتري الان </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ footer ============  -->
+    <section class="container-fluid footer">
+        <div class="row top_footer">
+            <div class="footer__logo col-sm-6 col-6">
+                <img src="image/logo.png" alt="logo">
+            </div>
+            <div class="footer__follow col-sm-6 col-6 ">
+                <div class="follow_box">
+                    <p>تابعنا</p>
+                    <div class="social">
+                        <div class="social__icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="social__icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="social__icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer__links col-md-3 col-sm-6 col-6">
+                <p class="footer__links-title">أقسام الخدمات</p>
+                <ul>
+                    <a href="">
+                        <li>التصميمات والديكورات</li>
+                    </a>
+                    <a href="">
+                        <li>التعليم عن بعد</li>
+                    </a>
+                    <a href="">
+                        <li>الفن</li>
+                    </a>
+                    <a href="">
+                        <li>الكتابة</li>
+                    </a>
+                    <a href="">
+                        <li>المال والأعمال</li>
+                    </a>
+                    <a href="">
+                        <li>برامج ادارة الحسابات</li>
+                    </a>
+                    <a href="">
+                        <li>برمجة وتطوير</li>
+                    </a>
+                    <a href="">
+                        <li>خدمات التسويق</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer__links col-md-3 col-sm-6 col-6">
+                <p class="footer__links-title">سياسة التعاقد</p>
+                <ul>
+                    <a href="">
+                        <li>شروط خدمة الموقع</li>
+                    </a>
+                    <a href="">
+                        <li>Full mark work </li>
+                    </a>
+                    <a href="">
+                        <li>سياسة الخصوصية</li>
+                    </a>
+                    <a href="">
+                        <li>النشرة البريدية</li>
+                    </a>
+                    <a href="">
+                        <li>الأخبار</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer__links col-md-2 col-sm-6 col-6">
+                <p class="footer__links-title">لينكات هامة</p>
+                <ul>
+                    <a href="">
+                        <li>الأخبار</li>
+                    </a>
+                    <a href="">
+                        <li>المستويات</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer__links col-md-2 col-sm-6 col-6">
+                <p class="footer__links-title">الطلبات</p>
+                <ul>
+                    <a href="">
+                        <li>تسجيل دخول</li>
+                    </a>
+                    <a href="">
+                        <li>التسجيل</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer__links col-md-2 col-sm-6 col-6">
+                <p class="footer__links-title">أقسام الموقع</p>
+                <ul>
+                    <a href="">
+                        <li>الصفحة الرئيسية</li>
+                    </a>
+                    <a href="">
+                        <li>كيفية العمل</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ___________ copy right __________ -->
+        <div class="copy__right">
+            <div class="paypal">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <i class="fa-brands fa-paypal"></i>
+            </div>
+            <p>&copy; Full mark work 2020 </p>
+        </div>
+
+    </section>
+
+    <!-- ----- link bootstrap  -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- ----- link js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

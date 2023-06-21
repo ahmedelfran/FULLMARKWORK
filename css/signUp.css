@@ -1,0 +1,434 @@
+.body {
+    font-family: 'Segoe UI';
+    background: #F5F5F5;
+    color: #999797;
+}
+
+.btn__sign {
+    padding: 20px 35px;
+    border: 2px solid #008B43;
+}
+
+.btn__login {
+    padding: 20px 35px;
+    margin-right: 15px;
+    color: #008B43;
+    border: 2px solid #008B43;
+    background: transparent;
+}
+.btn_sign,
+.btn_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #008B43;
+    border-radius: 20px;
+    border: 1px solid #008B43;
+    background: transparent;
+}
+.data_user a {
+    color: #008B43;
+}
+
+.signup {
+    width: 90%;
+    padding: 80px 110px;
+    background: #fff;
+    border-radius: 45px;
+    margin-top: 90px;
+}
+
+.signup__title p {
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.signup__title .titleGreen {
+    color: #008B43;
+}
+
+/* ========== form ============ */
+form {
+    margin-top: 70px;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0 10px 10px 0;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    border: 1px solid #bebebe;
+    border-radius: 25px;
+    transition: all 0.35s ease-in-out;
+}
+
+input {
+    width: 93%;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    border: none;
+    background: transparent;
+    padding: 20px;
+    border-radius: 25px;
+    transition: all .4s ease-in-out;
+}
+
+input::placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    color: #bebebe;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.input-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    line-height: 3.4em;
+    border-left: 1px solid #bebebe;
+}
+
+.input-icon i {
+    font-size: 16px;
+    color: #bebebe;
+}
+
+.file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+    border: 2px dashed #bebebe;
+    cursor: pointer;
+}
+
+.file :where(i, p) {
+    color: #bebebe;
+}
+
+.file i {
+    font-size: 70px;
+}
+
+.file p {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.file span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 100px;
+}
+.sign-in_btn,
+.sign-in_ggl {
+    width: 450px;
+    height: 70px;
+}
+
+.sign-in_btn span,
+.sign-in_ggl span {
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.sign-in_ggl {
+    background: #D04734;
+}
+
+.separator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #8B8E98;
+}
+
+.separator span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.separator .line {
+    display: block;
+    width: 160px;
+    height: 2px;
+    border: none;
+    background: #000000;
+}
+
+/* ==================== media queries ============================= */
+@media screen and (max-width: 1024px) {
+    .btn__sign,
+    .btn__login {
+        padding: 15px 30px;
+    }
+
+    .signup {
+        padding: 50px 60px;
+        margin-top: 70px;
+    }
+
+    form {
+        margin-top: 50px;
+    }
+    .signup__title p {
+        font-size: 26px;
+        line-height: 22px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .signup {
+        padding: 50px 20px;
+        margin-top: 50px;
+    }
+
+    .signup__title p {
+        font-size: 22px;
+    }
+    .form-label {
+        font-size: 20px;
+    }
+
+    .input-group {
+        margin-bottom: 30px;
+    }
+    input {
+        width: 88%;
+    }
+
+    .file {
+        height: 250px;
+    }
+
+    .file i {
+        font-size: 60px;
+    }
+
+    .file p {
+        font-size: 20px;
+    }
+
+    .sign-in_btn,
+    .sign-in_ggl {
+        width: 400px;
+    }
+    .button {
+        gap: 15px;
+        margin-top: 80px;
+    }
+    .btn_sign,
+.btn_login {
+    gap: 7px;
+    width: 170px;
+    height: 45px;
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 576px) {
+    .signup {
+        width: 95%;
+    }
+
+    .signup__title p {
+        font-size: 20px;
+    }
+
+    input {
+        width: 85%;
+    }
+
+    .form-label {
+        font-size: 18px;
+    }
+
+    .file {
+        height: 200px;
+    }
+
+    .file i {
+        font-size: 50px;
+    }
+
+    .file p {
+        margin-top: 10px;
+    }
+    .file span {
+        font-size: 15px;
+    }
+
+    .sign-in_btn,
+    .sign-in_ggl {
+        width: 300px;
+        height: 60px;
+    }
+
+    .sign-in_btn span,
+    .sign-in_ggl span {
+        font-size: 20px;
+    }
+
+    .separator {
+        gap: 17px;
+    }
+
+    .separator .line {
+        width: 120px;
+    }
+}
+@media screen and (max-width: 426px) {
+    .btn__sign,
+    .btn__login {
+        padding: 10px 20px;
+    }
+    .signup__title p {
+        font-size: 19px;
+    }
+    .input-group {
+        margin-bottom: 20px;
+    }
+    input {
+        width: 82%;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .input-icon {
+        width: 40px;
+        height: 25px;
+    }
+    
+    .input-icon i {
+        font-size: 14px;
+    }
+    .file {
+        height: 180px;
+    }
+
+    .file i {
+        font-size: 40px;
+    }
+
+    .file p {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .file span {
+        font-size: 14px;
+    }
+    .sign-in_btn,
+    .sign-in_ggl {
+        width: 250px;
+        height: 50px;
+    }
+
+    .sign-in_btn span,
+    .sign-in_ggl span {
+        font-size: 18px;
+    }
+
+    .separator {
+        gap: 12px;
+    }
+
+    .separator .line {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .signup__title p {
+        font-size: 17px;
+        line-height: 16px;
+    }
+    .form-label {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 7px ;
+    }
+    input {
+        width: 80%;
+        font-size: 14px;
+    }
+    input::placeholder {
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .input-icon {
+        width: 33px;
+        height: 23px;
+    }
+    
+    .input-icon i {
+        font-size: 12px;
+    }
+    .file {
+        height: 150px;
+    }
+
+    .file i {
+        font-size: 30px;
+    }
+
+    .file p {
+        font-size: 16px;
+    }
+    .sign-in_btn,
+    .sign-in_ggl {
+        width: 180px;
+        height: 50px;
+    }
+
+    .sign-in_btn span,
+    .sign-in_ggl span {
+        font-size: 16px;
+    }
+
+    .separator {
+        gap: 10px;
+    }
+
+    .separator .line {
+        width: 65px;
+    }
+    .button {
+        gap: 10px;
+        margin-top: 80px;
+    }
+}

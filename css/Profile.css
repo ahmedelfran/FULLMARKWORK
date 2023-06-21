@@ -1,0 +1,571 @@
+.profile_data {
+    width: 90%;
+    margin-top: 50px;
+}
+
+.profile_data-right {
+    padding: 30px 40px;
+    background: #F5F5F5;
+    border-radius: 45px;
+}
+
+.profile_data_user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile_data_user img {
+    width: 15%;
+    height: 15%;
+}
+
+.profile_data_user p {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px 14px 0 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.profile_data_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.profile_data_item h6 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.box_data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 55px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 650;
+    color: white;
+    background: linear-gradient(97.1deg, #017539 3.86%, #014320 108.67%);
+    border-radius: 5px;
+}
+
+.box_data i {
+    color: rgb(253, 197, 0);
+}
+
+.profile_data-lift {
+    direction: ltr;
+    padding: 20px 0;
+}
+
+.btn__edit {
+    padding: 15px 40px;
+}
+
+/* ========= about ========== */
+.about {
+    width: 90%;
+    margin-top: 80px;
+    padding: 30px 70px;
+    background: #F5F5F5;
+    border-radius: 45px;
+}
+
+.about__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__top h5 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.about__body {
+    margin-top: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.ol__text {
+    margin: 30px 0;
+}
+
+.ol__text ol {
+    padding: 10px 20px;
+}
+
+/* ====  profile services  ==== */
+.profile_services {
+    width: 90%;
+    margin-top: 110px;
+    padding: 20px 50px;
+    background: #F5F5F5;
+    border-radius: 45px;
+}
+
+.card {
+    background: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile_data_user img {
+        width: 18%;
+        height: 18%;
+    }
+
+    .profile_data_item h6 {
+        font-size: 19px;
+    }
+
+    .box_data {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .profile_services {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile_data-right {
+        border-radius: 35px;
+    }
+
+    .profile_data_user img {
+        width: 15%;
+        height: 15%;
+    }
+
+    .profile_data_user p {
+        font-size: 22px;
+    }
+
+    .profile_data_item h6 {
+        font-size: 22px;
+    }
+
+    .profile_data-lift {
+        direction: rtl;
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .about {
+        margin-top: 70px;
+        padding: 30px 40px;
+        border-radius: 35px;
+    }
+
+    .about__top h5 {
+        font-size: 26px;
+    }
+
+    .about__body {
+        font-size: 18px;
+    }
+
+    .profile_services {
+        margin-top: 70px;
+        padding: 20px 30px;
+        border-radius: 35px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .profile_data_user p,
+    .profile_data_item h6 {
+        font-size: 20px;
+    }
+
+    .box_data {
+        font-size: 17px;
+        width: 50px;
+        height: 40px;
+    }
+
+    .btn__edit {
+        padding: 13px 30px;
+    }
+
+    .profile_data-lift {
+        margin-top: 30px;
+    }
+
+    .about {
+        margin-top: 50px;
+        padding: 30px;
+    }
+
+    .about__body {
+        font-size: 17px;
+    }
+
+    .profile_services .card {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .profile_data_user img {
+        width: 17%;
+        height: 17%;
+    }
+
+    .profile_data_user p,
+    .profile_data_item h6 {
+        font-size: 18px;
+    }
+
+    .box_data {
+        font-size: 16px;
+        width: 45px;
+        height: 35px;
+    }
+
+    .profile_data-lift .btn__edit {
+        padding: 13px 20px;
+    }
+
+    .about .about__top .btn__edit {
+        padding: 11px 30px;
+    }
+
+    .about__body {
+        margin-top: 40px;
+        font-size: 13px;
+    }
+
+    .about__top h5 {
+        font-size: 23px;
+    }
+
+    .profile_data-right {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .profile_data {
+        margin-top: 20px;
+    }
+
+    .profile_data_user p,
+    .profile_data_item h6 {
+        font-size: 16px;
+    }
+
+    .box_data {
+        font-size: 14px;
+        width: 40px;
+        height: 30px;
+    }
+
+    .profile_data-lift {
+        margin-top: 20px;
+    }
+
+    .about {
+        margin-top: 40px;
+        padding: 20px 10px;
+    }
+
+    .about__top h5 {
+        font-size: 21px;
+    }
+
+    .about__body {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .about .about__top .btn__edit {
+        padding: 9px 20px;
+    }
+
+    .profile_services {
+        margin-top: 50px;
+        padding: 20px;
+    }
+}
+
+/* =======================  page Edit Profile  ====================== */
+.edit__profile {
+    width: 90%;
+    margin-top: 40px;
+    padding: 30px 30px;
+}
+
+/* == edit img == */
+.edit-image {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: #999797;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.edit-image img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.round {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    color: #999797;
+    overflow: hidden;
+}
+
+.round input[type="file"] {
+    position: absolute;
+    transform: scale(2);
+    right: 0;
+    opacity: 0;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+.input {
+    margin: 35px 0;
+}
+
+label,
+.edit_myService .title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 10px 8px;
+    color: #999797;
+}
+
+.input-group {
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid #999797;
+    border-radius: 20px;
+    transition: all 0.35s ease-in-out;
+}
+
+.input-group input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+.input-group button {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    color: #999797;
+    background: transparent;
+    transform: rotate(-90deg);
+}
+
+.edit_myService {
+    width: 90%;
+    margin-top: 40px;
+}
+
+.edit_myService .title {
+    padding: 10px 25px;
+}
+
+.edit_myService .profile_services {
+    width: 100%;
+    margin: 0;
+    background: transparent;
+    border: 1px solid #bebebe;
+}
+
+.btn_profile {
+    padding: 15px 50px;
+}
+
+.save_btn {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.edit_myService .card__top p {
+    margin-left: auto;
+}
+
+.edit_myService .card__top a {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #999797;
+    color: #999797;
+    transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 1024px) {
+    .edit-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .round {
+        bottom: -5px;
+        left: -5px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .edit_myService .profile_services .services__card .card {
+        padding: 0;
+    }
+
+    .edit_myService .card__top p {
+        font-size: 16px;
+    }
+
+    .edit_myService .card__top a {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+    .edit_myService .profile_services .services__card .card {
+        padding: 0 30px;
+    }
+
+    .input-group {
+        padding: 10px 30px;
+    }
+
+    .input-group input,
+    textarea {
+        font-size: 16px;
+    }
+
+    .input-group button {
+        top: 20px;
+        left: 25px;
+        font-size: 17px;
+    }
+
+    .edit_myService .card__top p {
+        font-size: 19px;
+    }
+
+    .edit_myService .card__top a {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .edit__profile {
+        padding: 0;
+    }
+
+    .edit-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .round {
+        bottom: -5px;
+        left: -5px;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    label,
+    .edit_myService .title {
+        font-size: 20px;
+    }
+
+    .input-group {
+        padding: 10px 10px;
+    }
+
+    .input-group input,
+    textarea {
+        font-size: 15px;
+    }
+
+    .save_btn {
+        margin-top: 40px;
+    }
+
+    .edit_myService .profile_services .services__card .card {
+        padding: 0;
+    }
+
+    .edit_myService .profile_services {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .edit-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .round {
+        bottom: -10px;
+        left: -10px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .edit_myService .card__top p {
+        font-size: 16px;
+    }
+
+    .edit_myService .card__top a {
+        width: 33px;
+        height: 33px;
+        font-size: 14px;
+    }
+}
